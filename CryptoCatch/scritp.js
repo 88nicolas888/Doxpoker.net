@@ -5,8 +5,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
     
     if (username && password) {
+        // Simples: salva o usuário e redireciona
         localStorage.setItem('username', username);
-        window.location.href = 'game.html';  // Redireciona para a página do jogo
+        window.location.href = 'game.html';
     } else {
         alert('Por favor, preencha todos os campos.');
     }
